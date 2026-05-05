@@ -16,4 +16,4 @@ select
     customer_segment,
     product_category,
     product_subcategory
-from {{ source('raw', 'purchases_raw') }}
+from {{ source('raw', 'purchases') }}
