@@ -2,8 +2,8 @@ version: 2
 
 sources:
   - name: raw
-    schema: raw
+    schema: dbt_nickriveraru_raw
     tables:
       - name: customers
       - name: products
-      - name: purchases_raw
+      - name: purchases

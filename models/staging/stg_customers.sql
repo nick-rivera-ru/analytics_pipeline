@@ -15,4 +15,4 @@ select
     contract_tendency,
     volatility_type,
     relationship_age
-from {{ source('raw', 'customers') }}
+from {{ source('raw', 'customers_data') }}
