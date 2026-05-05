@@ -4,6 +4,6 @@ sources:
   - name: raw
     schema: dbt_nickriveraru_raw
     tables:
-      - name: customers
+      - name: customers_data
       - name: products
       - name: purchases
