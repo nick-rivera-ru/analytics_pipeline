@@ -1,0 +1,19 @@
+select
+    purchase_id,
+    customer_id,
+    product_id,
+    purchase_date,
+    quantity,
+    unit_price,
+    total_price,
+    discount_applied,
+    channel,
+    payment_method,
+    season,
+    holiday_flag,
+    marketing_source,
+    campaign_id,
+    customer_segment,
+    product_category,
+    product_subcategory
+from {{ source('raw', 'purchases_raw') }}
