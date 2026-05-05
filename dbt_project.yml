@@ -1,0 +1,23 @@
+name: analytics_pipeline
+version: '1.0.0'
+config-version: 2
+
+profile: 'postgres_consulting_neon'
+
+model-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+models:
+  analytics_pipeline:
+    staging:
+      +schema: staging
+    marts:
+      +schema: marts
+
+seeds:
+  analytics_pipeline:
+    +schema: raw
