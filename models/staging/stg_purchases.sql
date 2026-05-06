@@ -2,7 +2,7 @@ select
     purchase_id,
     customer_id,
     product_id,
-    purchase_date,
+    purchase_datetime,
     quantity,
     unit_price,
     total_price,
