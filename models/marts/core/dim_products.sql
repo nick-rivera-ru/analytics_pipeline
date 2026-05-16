@@ -1,12 +1,11 @@
 {{ config(materialized='table') }}
 
 select
+    category,
+    subcategory,
     product_id,
-    commodity_code,
-    commodity_name,
-    commodity_sale_market,
-    product_category,
-    product_subcategory
+    product_name
+
 from {{ ref('stg_products') }}
 
 
