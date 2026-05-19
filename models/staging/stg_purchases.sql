@@ -15,5 +15,6 @@ select
     "Year" as year_dt,
     "Quarter" as quarter_dt,
     "Month (Name)" as month_name,
-    "Month (Number)" as month_number
+    "Month (Number)" as month_number,
+    unit_of_measure
 from {{ source('raw', 'purchases') }}

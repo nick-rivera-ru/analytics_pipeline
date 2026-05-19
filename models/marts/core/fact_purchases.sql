@@ -17,5 +17,6 @@ select
     year_dt,
     quarter_dt,
     month_name,
-    month_number
+    month_number,
+    unit_of_measure
 from {{ ref('stg_purchases') }}
