@@ -2,6 +2,7 @@ select
     purchase_id,
     purchase_datetime,
     customer_id,
+    buyer_id,
     store_id,
     channel,
     payment_method,
